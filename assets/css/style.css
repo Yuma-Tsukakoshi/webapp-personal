@@ -20,18 +20,18 @@ button{
   cursor: pointer;
 }
 
-
-
 /* header */
 .header{
   height: 64px;
   width: 100%;
-  margin-top: 15px;
   position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 1;
 }
 .header-wrapper{
+  margin-top: 15px; 
   display: flex;
-  background-color: #fff;
   align-items: center;
   justify-content: space-between;
 }
@@ -45,20 +45,121 @@ button{
   font-size: 18px;
 }
 .nav-list{
-  gap: 16px;
+  gap: 20px;
+  font-weight: bold;
   display: flex;
-  color: rgb(30, 206, 59);
+  color: rgb(206, 36, 30);
   align-items: center;
 }
 
 .nav-items{}
 .button{
-  background: linear-gradient(to right ,rgb(9, 245, 40) 0%,rgb(6, 81, 221) 100%);
+  background: linear-gradient(to right ,rgb(245, 17, 9) 0%,rgb(231, 21, 137) 50%,rgb(130, 30, 224) 100%);
   color: #fff;
   margin: 0 20px;
 }
 .button.head{
-  width: 120px;
-  height: 40px;
-  border-radius: 16px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+/* main */
+.main{
+  margin-top: 80px;
+}
+.box {
+  background-color: #fff;
+  box-shadow: 5px 5px 2px 0 #e2dede;
+}
+.both-side{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 20px 10%;
+}
+.left-side{
+  margin-right: 10px;
+}
+.right-side{
+  margin-left: 10px;
+}
+.hour-section{}
+.hour-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  height: 20vh;
+  margin-bottom: 20px;
+  line-height: 2.0;
+}
+.box-day{
+  text-align: center;
+  border-radius: 25px;
+}
+.box-month{
+  text-align: center;
+  border-radius: 25px;
+}
+.box-total{
+  text-align: center;
+  border-radius: 25px;
+}
+.hour-title{
+  color: rgb(245, 17, 9);
+  font-weight: bold;
+  font-size: 20px;
+}
+.hour-time{
+  display: block;
+  font-weight: bold;
+  font-size: 40px;
+}
+.hour{
+  color: rgb(130, 30, 224);
+  font-size: 20px;
+}
+.Todo{
+  height: 55vh;
+  border-radius: 30px;
+}
+.Todo-title{}
+.Todo-textarea{
+  margin-left: 30px;
+  resize: none;
+  cursor: pointer;
+}
+.bar-gragh{
+  height:55vh;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.sub-functions{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.timer{
+  height: 20vh;
+  border-radius: 25px;
+}
+.countdown{
+  height: 20vh;
+  border-radius: 20px;
+}
+
+/* footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.arrow-left{
+  display: block;
+}
+.footer-year{
+  font-size: 18px;
+  font-weight: bold;
+}
+.arrow-right{
+  display: block;
 }
