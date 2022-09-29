@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/jquery-3.6.1.min.js" defer></script>
-  <script src="./assets/js/script.js" defer></script>
+  <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+  <script src="./assets/js/bar.js" defer></script>
+  <script src="./assets/js/SubFunction.js" defer></script>
+  <script src="./assets/js/calendar.js" defer></script>
+  <script src="./assets/js/modal.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -36,8 +40,8 @@
       <div class="left-side">
         <div class="hour-section">
           <ul class="hour-list">
-            <li class="box box-day">
-              <p class="hour-title">Day</p>
+            <li class="box box-today">
+              <p class="hour-title">Today</p>
               <span class="hour-time">3</span>
               <span class="hour">hour</sp>
             </li>
@@ -53,13 +57,13 @@
             </li>
           </ul>
         </div>
-        <div class="box Todo">
-          <h2 class="Todo-title">《To do》</h2>
-          <textarea name="" id="" cols="50" rows="19" class="Todo-textarea"></textarea>
-        </div>
+        <div class="box bar-gragh" id="bar"></div>
       </div>
       <div class="right-side">
-        <div class="box bar-gragh" id="bar">棒グラフ挿入</div>
+        <div class="box Todo">
+          <h2 class="Todo-title">《To do》</h2>
+          <textarea name="" id="" cols="51" rows="21" class="Todo-textarea"></textarea>
+        </div>
         <div class="sub-functions">
           <div class="box timer">タイマー機能</div>
           <div class="box countdown">カウントダウン機能</div>

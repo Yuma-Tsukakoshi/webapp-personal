@@ -90,19 +90,22 @@ button{
   gap: 20px;
   height: 20vh;
   margin-bottom: 20px;
-  line-height: 2.0;
+  line-height: 1.5;
 }
-.box-day{
+.box-today{
   text-align: center;
   border-radius: 25px;
+  padding-top: 15px;
 }
 .box-month{
   text-align: center;
   border-radius: 25px;
+  padding-top: 15px;
 }
 .box-total{
   text-align: center;
   border-radius: 25px;
+  padding-top: 15px;
 }
 .hour-title{
   color: rgb(245, 17, 9);
@@ -116,9 +119,10 @@ button{
 }
 .hour{
   color: rgb(130, 30, 224);
-  font-size: 20px;
+  font-size: 22px;
 }
 .Todo{
+  margin-bottom: 20px;
   height: 55vh;
   border-radius: 30px;
 }
@@ -126,11 +130,13 @@ button{
 .Todo-textarea{
   margin-left: 30px;
   resize: none;
-  cursor: pointer;
+  outline: none;
+  border: 2px solid ;
+  border-image: linear-gradient(to right ,rgb(245, 17, 9) 0%,rgb(231, 21, 137) 50%,rgb(130, 30, 224) 100%) 1;
 }
 .bar-gragh{
   height:55vh;
-  margin-bottom: 20px;
+  margin-top: 20px;
   border-radius: 30px;
 }
 .sub-functions{
