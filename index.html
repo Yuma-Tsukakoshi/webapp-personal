@@ -10,7 +10,7 @@
   <script src="./assets/js/jquery-3.6.1.min.js" defer></script>
   <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
   <script src="./assets/js/bar.js" defer></script>
-  <script src="./assets/js/SubFunction.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
   <script src="./assets/js/calendar.js" defer></script>
   <script src="./assets/js/modal.js" defer></script>
 </head>
@@ -24,10 +24,38 @@
             <a href="https://www.youtube.com/channel/UCIBlbPP3I-C9tYLMHLUYQXQ/videos" target="_blank">Youtube</a>
           </li>
           <li class="nav-items">
-            <a href="">資格試験▼</a>
+            <div class="exam-slidedown">資格試験▼</div>
+            <ul class="exam-list">
+              <li class="exam-items">
+                <a href="https://www.fe-siken.com/" target="_blank">基本情報技術者</a>
+              </li>
+              <li class="exam-items">
+                <a href="https://www.ap-siken.com/" target="_blank">応用情報技術者</a>
+              </li>
+              <li class="exam-items">
+                <a href="https://www.nw-siken.com/" target="_blank">ネットワークスペシャリスト</a>
+              </li>
+              <li class="exam-items">
+                <a href="https://www.db-siken.com/" target="_blank">データベーススペシャリスト</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-items">
-            <a href="">機械学習▼</a>
+            <div class="machine-slidedown">機械学習▼</div>
+            <ul class="machine-list">
+              <li class="machine-items">
+                <a href="https://free.kikagaku.ai/" target="_blank">キカガク</a>
+              </li>
+              <li class="machine-items">
+                <a href="https://tutorials.chainer.org/ja/tutorial.html" target="_blank">チュートリアル</a>
+              </li>
+              <li class="machine-items">
+                <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+              </li>
+              <li class="machine-items">
+                <a href="https://atcoder.jp/" target="_blank">At Corder</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <button class="button head">記録・投稿</button>
@@ -66,7 +94,7 @@
         </div>
         <div class="sub-functions">
           <div class="box timer">タイマー機能</div>
-          <div class="box countdown">カウントダウン機能</div>
+          <div class="box countdown">カウントダウン機能(締め切りなど)</div>
         </div>
       </div>
     </div>
