@@ -19,6 +19,9 @@ button{
   outline: none;
   cursor: pointer;
 }
+input{
+  border: none;
+}
 
 /* header */
 .header{
@@ -51,12 +54,11 @@ button{
   color: rgb(206, 36, 30);
   margin-top: 15px;
 }
-
-.nav-items{}
 .button{
   background: linear-gradient(to right ,rgb(245, 17, 9) 0%,rgb(231, 21, 137) 50%,rgb(130, 30, 224) 100%);
   color: #fff;
   margin: 0 20px;
+  box-shadow: 4px 5px 5px 0 #e7b5b5;
 }
 .button.head{
   width: 150px;
@@ -159,6 +161,41 @@ button{
   margin: 10px 20px;
 }
 
+/* modal-top */
+.modal-box{
+  background-color: #f2f3f7;
+  box-shadow: 5px 5px 2px 0 #e2dede;
+}
+.modal-top{}
+.modal-both-side{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 20px 8% 10px;
+}
+.modal-left-side{}
+.modal-right-side{}
+.study-date{}
+.modal-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.study-date-box{}
+.study-contents{}
+.test-contents{}
+.machine-contents{}
+.study-time{}
+.study-time-box{}
+.twitter{}
+.twitter-box{}
+.button.modal-record{
+  display: block;
+  margin: 0 auto;
+  padding: 15px 85px;
+  border-radius: 30px;
+}
+
+/* modal-loading */
+/* modal-record */
 
 /* main */
 .main{
@@ -179,7 +216,6 @@ button{
 .right-side{
   margin-left: 10px;
 }
-.hour-section{}
 .hour-list{
   display: grid;
   grid-template-columns: repeat(3,1fr);
