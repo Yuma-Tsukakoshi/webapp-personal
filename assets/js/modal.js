@@ -2,11 +2,17 @@
 
 $('.modal').hide()
 $('#js-openModal').click(function(){
-  $('.modal').fadeIn(400)//ここと入れ替える
+  $('.modal').fadeIn(350)
   $('#js-buckModal').css("display","none")
-  // $('.overlay').addClass('openModal')
 })
 $('#js-closeModal').click(function(){
-  $('.modal').fadeOut(400)//ここと入れ替える
-  //$('.overlay').removeClass('openModal')
+  $('.modal').fadeOut(250)
+  $('.modal-loading').hide()
+  $('.modal-top').show("slow")
+})
+
+$('.modal-loading').hide()
+$('#js-record-button').click(function(){
+  $('.modal-top').fadeOut(250)
+  $('.modal-loading').fadeIn(350)
 })

@@ -78,30 +78,51 @@
                 <div class="study-contents">
                   <div class="test-contents">
                     <p class="modal-title">資格試験</p>
+                    <!-- inputの後にlabelタグ作ることで文字を押してもチェックボックス反応 -->
+                    <div class="checkbox-test-contents">
+                      <input type="checkbox" id="check1" class="checkbox" name="test" value=""><label for="check1" class="label">基本情報技術者</label>
+                      <input type="checkbox" id="check2" class="checkbox" name="test" value=""><label for="check2" class="label">応用情報技術者</label>
+                      <input type="checkbox" id="check3" class="checkbox" name="test" value=""><label for="check3" class="label">ネットワークスペシャリスト</label>
+                      <input type="checkbox" id="check4" class="checkbox" name="test" value=""><label for="check4" class="label">データベーススペシャリスト</label>
+                      <input type="checkbox" id="check5" class="checkbox" name="test" value=""><label for="check5" class="label">TOEIC</label>
+                    </div>
                   </div>
                   <div class="machine-contents">
                     <p class="modal-title">機械学習</p>
+                    <div class="checkbox-machine-list">
+                      <input type="checkbox" id="check11" class="checkbox" name="machine" value=""><label for="check11" class="label">キカガク</label>
+                      <input type="checkbox" id="check12" class="checkbox" name="machine" value=""><label for="check12" class="label">チュートリアル<label>
+                      <input type="checkbox" id="check13" class="checkbox" name="machine" value=""><label for="check13" class="label">Kaggle</label>
+                      <input type="checkbox" id="check14" class="checkbox" name="machine" value=""><label for="check14" class="label">At Corder</label>
+                      <input type="checkbox" id="check15" class="checkbox" name="machine" value=""><label for="check15" class="label">AIC</label>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="modal-right-side">
                 <div class="study-time">
-                  <p class="modal-title">学習日</p>
+                  <p class="modal-title">学習時間</p>
                   <input type="text" class="modal-box study-time-box">
                 </div>
                 <div class="twitter">
                   <p class="modal-title">Twitter用コメント</p>
-                  <textarea name="" id="" cols="30" rows="10" class="modal-box twitter-box"></textarea>
+                  <textarea name="" id="" cols="34" rows="14" class="modal-box twitter-box"></textarea>
+                  <input type="checkbox" id="check21" class="checkbox" name="twitter" value=""><label for="check21" class="label">Twitterにシェアする</label>
                 </div>
               </div>
             </div>
-            <button class="button modal-record">記録・投稿</button>
+            <button class="button modal-record" id="js-record-button">記録・投稿</button>
           </section>
 
           <!-- loading-modal -->
-
+          <section class="modal-loading">
+            <div class="loading-wrapper">ローディングクルクル</div>
+          </section>
 
           <!-- record-modal -->
+          <section class="modal-record">
+            
+          </section>
 
         </div>
       </div>
