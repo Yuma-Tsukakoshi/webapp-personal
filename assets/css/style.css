@@ -73,6 +73,7 @@ button{
   height: 100%;
 }
 .exam-items{
+  font-size: 14px;
   text-align: center;
   background-color: rgb(218, 216, 216);
   padding: 10px 5px;
@@ -88,6 +89,7 @@ button{
   cursor: pointer;
 }
 .machine-items{
+  font-size: 14px;
   text-align: center;
   background-color: rgb(218, 216, 216);
   padding: 10px 5px;
@@ -96,6 +98,67 @@ button{
 .machine-items:hover{
   background-color: rgb(247, 189, 178);
 }
+
+/* modal */
+.modal{
+  display: none;
+  position: absolute; 
+  inset: 0;  
+}
+.modal:before {
+  content: "";
+  display: block;
+  height: 150vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7);
+  inset: 0;
+}
+.overlay.openModal > .modal {
+  display: block;
+}
+.overlay.openModal > .modal-close-button{
+  display: block;
+}
+.modal-content{
+  width: 900px;
+  height: 540px;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: 2;
+  position: absolute;
+  margin-top: 27%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modal-close-button{
+  background-color: rgba(#f2f3f7, .7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(100,100,100);
+  right: 0;
+  display: inline-block;
+  position: absolute;
+  margin: 10px 20px;
+}
+.modal-buck-button{
+  display: none;
+  background-color: rgba(#f2f3f7, .7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(100,100,100);
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  margin: 10px 20px;
+}
+
 
 /* main */
 .main{
