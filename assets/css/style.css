@@ -101,7 +101,7 @@ button{
 
 /* modal */
 .modal{
-  display: none;
+  /* display: none; */
   position: absolute; 
   inset: 0;  
 }

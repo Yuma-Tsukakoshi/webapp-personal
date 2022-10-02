@@ -1,9 +1,12 @@
 'use strict';
 
+$('.modal').hide()
 $('#js-openModal').click(function(){
-  $('.overlay').addClass('openModal')
+  $('.modal').fadeIn(400)//ここと入れ替える
   $('#js-buckModal').css("display","none")
+  // $('.overlay').addClass('openModal')
 })
 $('#js-closeModal').click(function(){
-  $('.overlay').removeClass('openModal')
+  $('.modal').fadeOut(400)//ここと入れ替える
+  //$('.overlay').removeClass('openModal')
 })
