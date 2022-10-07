@@ -79,7 +79,7 @@
                   <div class="test-contents">
                     <p class="modal-title">資格試験</p>
                     <!-- inputの後にlabelタグ作ることで文字を押してもチェックボックス反応 -->
-                    <div class="checkbox-test-contents">
+                    <div class="checkbox-test-list">
                       <input type="checkbox" id="check1" class="checkbox" name="test" value=""><label for="check1" class="label">基本情報技術者</label>
                       <input type="checkbox" id="check2" class="checkbox" name="test" value=""><label for="check2" class="label">応用情報技術者</label>
                       <input type="checkbox" id="check3" class="checkbox" name="test" value=""><label for="check3" class="label">ネットワークスペシャリスト</label>
@@ -91,7 +91,9 @@
                     <p class="modal-title">機械学習</p>
                     <div class="checkbox-machine-list">
                       <input type="checkbox" id="check11" class="checkbox" name="machine" value=""><label for="check11" class="label">キカガク</label>
-                      <input type="checkbox" id="check12" class="checkbox" name="machine" value=""><label for="check12" class="label">チュートリアル<label>
+
+                      <input type="checkbox" id="check12" class="checkbox" name="machine" value=""><label for="check12" class="label">チュートリアル</label>
+
                       <input type="checkbox" id="check13" class="checkbox" name="machine" value=""><label for="check13" class="label">Kaggle</label>
                       <input type="checkbox" id="check14" class="checkbox" name="machine" value=""><label for="check14" class="label">At Corder</label>
                       <input type="checkbox" id="check15" class="checkbox" name="machine" value=""><label for="check15" class="label">AIC</label>
@@ -107,7 +109,7 @@
                 <div class="twitter">
                   <p class="modal-title">Twitter用コメント</p>
                   <textarea name="" id="" cols="34" rows="14" class="modal-box twitter-box"></textarea>
-                  <input type="checkbox" id="check21" class="checkbox" name="twitter" value=""><label for="check21" class="label">Twitterにシェアする</label>
+                  <input type="checkbox" id="check21" class="checkbox" name="twitter" value=""><label for="check21" class="share-text">Twitterにシェアする</label>
                 </div>
               </div>
             </div>
@@ -130,6 +132,10 @@
             </div>
           </section>
 
+          <!-- To-do -->
+          <section class="modal-Todo">
+
+          </section>
         </div>
       </div>
     </div>
@@ -161,12 +167,11 @@
         <div class="box bar-gragh" id="bar"></div>
       </div>
       <div class="right-side">
-        <div class="box Todo">
+        <div class="box Todo ">
           <h2 class="Todo-title">《To do》</h2>
           <textarea name="" id="" cols="51" rows="21" class="Todo-textarea">
-            10月5日に基本情報技術者試験受ける
-            11月23日に基本情報技術者資格取る
           </textarea>
+          <button class="button button-Todo" id="js-Todo-button">To doを追加する</button>
         </div>
         <div class="sub-functions">
           <div class="box timer">
@@ -174,7 +179,7 @@
               <img src="./assets/img/stop-watch.png" alt="">
             </figure>
           </div>
-          <div class="box countdown">カウントダウン機能(締め切りなど)</div>
+          <div class="box countdown"></div>
         </div>
       </div>
     </div>

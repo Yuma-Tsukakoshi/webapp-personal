@@ -23,6 +23,77 @@ textarea,
 input{
   border: none;
 }
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox]:checked{
+  display: none;
+}
+input[type=checkbox]+label{
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 8px 10px 5px 28px;
+  position: relative;
+  width: auto;
+}
+input[type=checkbox] + label::before{
+  position: absolute;
+  top: 45%;
+  left: 6px;
+  display: block;
+  margin-top: -8px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: #c8c8c9;
+  border-radius: 50%;
+}
+input[type=checkbox] + label::after {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  content: '';
+  display: block;
+  height: 9px;
+  left: 12px;
+  margin-top: -7px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 5px;
+}
+input[type=checkbox]:checked + .label {
+  box-sizing: border-box;
+  background-color: #f8d6d3;
+  cursor: pointer;
+  padding: 8px 10px 5px 28px;
+  position: relative;
+  width: auto;
+}
+input[type=checkbox]:checked + label::before{
+  position: absolute;
+  top: 45%;
+  left: 6px;
+  display: block;
+  margin-top: -8px;
+  width: 20px;
+  height: 20px;
+  content: '';
+  background: #ff0000;
+  border-radius: 50%;
+}
+input[type=checkbox]:checked + label::after {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  content: '';
+  display: block;
+  height: 9px;
+  left: 12px;
+  margin-top: -7px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 5px;
+}
 
 /* header */
 .header{
@@ -105,7 +176,6 @@ input{
 
 /* modal */
 .modal{
-  /* display: none; */
   position: absolute; 
   inset: 0;  
 }
@@ -181,11 +251,11 @@ input{
 .modal-right-side{
   margin-left: 20px;
 }
-.study-date{}
+/* .study-date{} */
 .modal-title{
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .study-date-box{
   height: 7.5vh;
@@ -193,10 +263,14 @@ input{
   border-radius: 16px;
   cursor: pointer;
 }
-.study-contents{}
-.test-contents{}
-.machine-contents{}
-.study-time{}
+/* .study-contents{} */
+.test-contents{
+  margin-top: 23px;
+}
+.machine-contents{
+  margin-top: 23px;
+}
+/* .study-time{} */
 .study-time-box{
   height: 7.5vh;
   width: 360px;
@@ -217,10 +291,25 @@ input{
   border-radius: 25px;
   font-size: 20px;
 }
-.checkbox-test-contents{}
-.checkbox-machine-list{}
-.checkbox{}
-.label{}
+.checkbox-test-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+.checkbox-machine-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+.label{
+  background-color: #f2f3f7;
+  border-radius: 30px;
+  letter-spacing: 0.05em;
+}
 
 /* modal-loading */
 .circle{
@@ -261,7 +350,7 @@ input{
   text-align: center;
   margin-top: 18%;
 }
-.record-wrapper{}
+/* .record-wrapper{} */
 .record-title{
   display: block;
   color: #bc72e7;
@@ -337,15 +426,23 @@ input{
   margin-bottom: 20px;
   height: 55vh;
   border-radius: 30px;
+  position: relative;
 }
-.Todo-title{}
+/* .Todo-title{} */
 .Todo-textarea{
   margin-left: 30px;
   resize: none;
   outline: none;
-  /* border: 4px solid;
-  border-image: linear-gradient(to right ,rgb(245, 17, 9) 0%,rgb(231, 21, 137) 50%,rgb(130, 30, 224) 100%) 1; */
 }
+.button.button-Todo{
+  display: block;
+  right: 0;
+  position: absolute;
+  border-radius: 15px;
+  padding: 5px 10px;
+  bottom: 15px;
+}
+
 .bar-gragh{
   height:55vh;
   margin-top: 20px;

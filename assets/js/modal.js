@@ -1,10 +1,17 @@
 'use strict';
 
 $('.modal').hide()
+$('.modal-Todo').hide()
 $('#js-buckModal').hide()
 
 $('#js-openModal').click(function(){
   $('.modal').fadeIn(350)
+})
+$('#js-Todo-button').click(function(){
+  $('.modal').fadeIn(350)
+  $('.modal-top').hide()
+  $('.modal-Todo').fadeIn(350)
+
 })
 $('#js-closeModal').click(function(){
   $('.modal').fadeOut(250)
