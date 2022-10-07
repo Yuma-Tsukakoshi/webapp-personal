@@ -14,3 +14,7 @@ $('.machine-slidedown').mouseover(function() {
 $('main').mouseover(function() {
   $('.machine-list').slideUp(200);
   });
+
+$('.box.timer').click(function(){
+  $('.stop-watch').fadeToggle("slow");
+})

@@ -149,7 +149,6 @@ input{
   margin: 10px 20px;
 }
 .modal-buck-button{
-  display: none;
   background-color: rgba(#f2f3f7, .7);
   width: 40px;
   height: 40px;
@@ -224,7 +223,59 @@ input{
 .label{}
 
 /* modal-loading */
-/* modal-record */
+.circle{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background-image: linear-gradient(to left,rgb(245, 17, 9) 0%,rgb(231, 21, 137) 100%);
+  box-sizing:border-box;
+  position:relative;
+  margin-top: 23%;
+  left: 45%;
+  animation:circle 0.9s linear infinite;
+  -webkit-animation:circle 0.9s linear infinite;
+  border: 15px solid transparent;
+  border-top-color: #fff;
+}
+.circle::before{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  content: "";
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+@keyframes circle{
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+@-webkit-keyframes circle{
+  0%{-webkit-transform:rotate(0deg)}
+  100%{-webkit-transform:rotate(360deg)}
+}
+/* modal-post */
+.modal-post{
+  text-align: center;
+  margin-top: 18%;
+}
+.record-wrapper{}
+.record-title{
+  display: block;
+  color: #bc72e7;
+}
+.icon-check-done img{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+.record-text{
+  display: block;
+  line-height: 1.5;
+  font-size: 18px;
+}
 
 /* main */
 .main{
@@ -308,6 +359,17 @@ input{
 .timer{
   height: 20vh;
   border-radius: 25px;
+  cursor: pointer;
+}
+.stop-watch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.stop-watch img{
+  width: 120px;
+  height: 120px;
 }
 .countdown{
   height: 20vh;

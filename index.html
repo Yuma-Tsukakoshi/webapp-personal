@@ -73,7 +73,7 @@
               <div class="modal-left-side">
                 <div class="study-date">
                   <p class="modal-title">学習日</p>
-                  <input type="text" class="modal-box study-date-box">
+                  <input type="text" class="modal-box study-date-box" id="js-study-date">
                 </div>
                 <div class="study-contents">
                   <div class="test-contents">
@@ -116,12 +116,18 @@
 
           <!-- loading-modal -->
           <section class="modal-loading">
-            <div class="loading-wrapper">ローディングクルクル</div>
+            <div class="circle"></div>
           </section>
 
-          <!-- record-modal -->
-          <section class="modal-record">
-            
+          <!-- post-modal -->
+          <section class="modal-post">
+            <div class="record-wrapper">
+              <span class="record-title">AWESOME!</span>
+              <figure class="icon-check-done">
+                <img src="./assets/img/icon-check-done.png" alt="">
+              </figure>
+              <span class="record-text">記録・投稿<br>完了しました</span>
+            </div>
           </section>
 
         </div>
@@ -157,10 +163,17 @@
       <div class="right-side">
         <div class="box Todo">
           <h2 class="Todo-title">《To do》</h2>
-          <textarea name="" id="" cols="51" rows="21" class="Todo-textarea"></textarea>
+          <textarea name="" id="" cols="51" rows="21" class="Todo-textarea">
+            10月5日に基本情報技術者試験受ける
+            11月23日に基本情報技術者資格取る
+          </textarea>
         </div>
         <div class="sub-functions">
-          <div class="box timer">タイマー機能</div>
+          <div class="box timer">
+            <figure class="stop-watch">
+              <img src="./assets/img/stop-watch.png" alt="">
+            </figure>
+          </div>
           <div class="box countdown">カウントダウン機能(締め切りなど)</div>
         </div>
       </div>
