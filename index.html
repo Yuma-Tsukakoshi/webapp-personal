@@ -134,7 +134,36 @@
 
           <!-- To-do -->
           <section class="modal-Todo">
-
+            <div class="input-text-list">
+              <h2 class="todo-title">《date》</h2>
+              <input class="todo-input-text" type="text" name="" id="">
+              <h2 class="todo-title">《Todo》</h2>
+              <input class="todo-input-text" type="text" name="" id="Todo">
+            </div>
+            <div class="Todo-flex">
+              <div class="Todo-color">
+                <h2 class="todo-title">《color》</h2>
+                <input type="color" name="" id="color">
+              </div>
+              <div class="Todo-category">
+                <h2 class="todo-title">《category》</h2>
+                <select id="category" name="category">
+                  <option value="選択してください" selected disabled>選択してください</option>
+                  <option value="資格試験">資格試験</option>
+                  <option value="機械学習">機械学習</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+            </div>
+            <hr class="boundary">
+            <div class="input-values">
+              <div class="input-values-wrappper">
+                <div id="input-value-date"></div>
+                <h3 id="input-value-Todo"></h3>
+                <p id="input-value-category"></p>
+              </div>
+              <button class="button decide" id="decide-button">確定＆記録</button>
+            </div>
           </section>
         </div>
       </div>

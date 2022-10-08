@@ -5,6 +5,7 @@ $('.modal-Todo').hide()
 $('#js-buckModal').hide()
 
 $('#js-openModal').click(function(){
+  $('.modal-Todo').hide()
   $('.modal').fadeIn(350)
 })
 $('#js-Todo-button').click(function(){

@@ -365,6 +365,63 @@ input[type=checkbox]:checked + label::after {
   line-height: 1.5;
   font-size: 18px;
 }
+/* modal-Todo */
+.modal-Todo{}
+.input-text-list{
+  margin: 3% auto;
+}
+.todo-input-text{
+  background: #817b7b33;
+  margin: 10px auto 10px;
+  width: 700px;
+  height: 40px;
+  display: block;
+}
+.todo-title{
+  text-align: center;
+  font-size: 30px;
+}
+.Todo-flex{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+}
+.Todo-color{}
+.Todo-category{}
+.boundary{
+  opacity: 0.3;
+  border-bottom: 2px solid #ec9147;
+  margin: 20px 10%;
+}
+.input-values{}
+.input-values-wrappper{}
+.input-values-wrappper{
+  display: flex;
+  background-color: #817b7b33;
+  width: 700px;
+  height: 65px;
+  border-radius: 0 18px 18px 0;
+  margin: 40px 0 0 100px;
+}
+#input-value-date{}
+#input-value-Todo{
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  display: wrap;
+}
+#input-value-category{
+  color: #333;
+  opacity: 0.5;
+}
+.button.decide{
+  position: absolute;
+  padding: 10px 100px;
+  border-radius: 25px;
+  margin: 30px auto;
+  bottom: 0;
+  right: 33%;
+}
 
 /* main */
 .main{
