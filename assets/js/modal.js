@@ -19,6 +19,8 @@ $('#js-closeModal').click(function(){
   $('.modal-loading').hide()
   $('.modal-post').hide()
   $('.modal-top').show("slow")
+  unChecked(checkbox);
+  Textclear(InputTexts);
 })
 
 $('.modal-post').hide()
@@ -28,6 +30,7 @@ let $Timeloading;
 $('#js-record-button').click(function(){
   $('.modal-top').fadeOut(250)
   $('.modal-loading').fadeIn(350)
+  tweet();
   $Timeloading = setTimeout(function(){
     $('.modal-loading').fadeOut(250);
     $('.modal-post').fadeIn(1000);

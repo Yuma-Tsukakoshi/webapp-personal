@@ -73,7 +73,7 @@
               <div class="modal-left-side">
                 <div class="study-date">
                   <p class="modal-title">学習日</p>
-                  <input type="text" class="modal-box study-date-box" id="js-study-date">
+                  <input type="text" class="modal-box study-date-box text" id="js-study-date">
                 </div>
                 <div class="study-contents">
                   <div class="test-contents">
@@ -104,12 +104,13 @@
               <div class="modal-right-side">
                 <div class="study-time">
                   <p class="modal-title">学習時間</p>
-                  <input type="text" class="modal-box study-time-box">
+                  <input type="text" class="modal-box study-time-box text">
                 </div>
                 <div class="twitter">
                   <p class="modal-title">Twitter用コメント</p>
-                  <textarea name="" id="" cols="34" rows="14" class="modal-box twitter-box"></textarea>
-                  <input type="checkbox" id="check21" class="checkbox" name="twitter" value=""><label for="check21" class="share-text">Twitterにシェアする</label>
+                  <textarea name="" id="tweet-area" cols="34" rows="14" class="modal-box twitter-box text"></textarea>
+                  <script src="https://platform.twitter.com/widgets.js" defer></script>
+                  <input type="checkbox" id="check21" class="checkbox js-twitter" name="twitter" value=""><label for="check21" class="share-text">Twitterにシェアする</label>
                 </div>
               </div>
             </div>
@@ -136,14 +137,14 @@
           <section class="modal-Todo">
             <div class="input-text-list">
               <h2 class="todo-title">《date》</h2>
-              <input class="todo-input-text" type="text" name="" id="">
+              <input class="todo-input-text" type="text" name="date" id="">
               <h2 class="todo-title">《Todo》</h2>
-              <input class="todo-input-text" type="text" name="" id="Todo">
+              <input class="todo-input-text" type="text" name="Todo" id="Todo">
             </div>
             <div class="Todo-flex">
               <div class="Todo-color">
                 <h2 class="todo-title">《color》</h2>
-                <input type="color" name="" id="color">
+                <input type="color" name="color" id="color">
               </div>
               <div class="Todo-category">
                 <h2 class="todo-title">《category》</h2>

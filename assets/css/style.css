@@ -398,6 +398,8 @@ input[type=checkbox]:checked + label::after {
 .input-values-wrappper{
   display: flex;
   background-color: #817b7b33;
+  opacity: .5;
+  z-index: -1;
   width: 700px;
   height: 65px;
   border-radius: 0 18px 18px 0;
@@ -411,7 +413,9 @@ input[type=checkbox]:checked + label::after {
   display: wrap;
 }
 #input-value-category{
-  color: #333;
+  font-size: 20px;
+  right: 2%;
+  font-weight: bold;
   opacity: 0.5;
 }
 .button.decide{
