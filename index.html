@@ -91,9 +91,7 @@
                     <p class="modal-title">機械学習</p>
                     <div class="checkbox-machine-list">
                       <input type="checkbox" id="check11" class="checkbox" name="machine" value=""><label for="check11" class="label">キカガク</label>
-
                       <input type="checkbox" id="check12" class="checkbox" name="machine" value=""><label for="check12" class="label">チュートリアル</label>
-
                       <input type="checkbox" id="check13" class="checkbox" name="machine" value=""><label for="check13" class="label">Kaggle</label>
                       <input type="checkbox" id="check14" class="checkbox" name="machine" value=""><label for="check14" class="label">At Corder</label>
                       <input type="checkbox" id="check15" class="checkbox" name="machine" value=""><label for="check15" class="label">AIC</label>
@@ -139,8 +137,7 @@
               <h2 class="todo-title">《date》</h2>
               <input class="todo-input-text" type="text" name="date" id="">
               <h2 class="todo-title">《Todo》</h2>
-              <input class="todo-input-text" type="text" name="Todo" id="Todo">
-            </div>
+              <input class="todo-input-text" id="Todo" name="Todo">
             <div class="Todo-flex">
               <div class="Todo-color">
                 <h2 class="todo-title">《color》</h2>
@@ -158,7 +155,8 @@
             </div>
             <hr class="boundary">
             <div class="input-values">
-              <div class="input-values-wrappper">
+              <div class="input-values-wrappper" id="js-input">
+                <input type="checkbox" id="check30" class="checkbox" name="" value=""><label for="check30" class="label check-Todo"></label>
                 <div id="input-value-date"></div>
                 <h3 id="input-value-Todo"></h3>
                 <p id="input-value-category"></p>
@@ -197,10 +195,9 @@
         <div class="box bar-gragh" id="bar"></div>
       </div>
       <div class="right-side">
-        <div class="box Todo ">
+        <div class="box Todo">
           <h2 class="Todo-title">《To do》</h2>
-          <textarea name="" id="" cols="51" rows="21" class="Todo-textarea">
-          </textarea>
+          <div id="Todo-textarea" class="Todo-textarea"></div>
           <button class="button button-Todo" id="js-Todo-button">To doを追加する</button>
         </div>
         <div class="sub-functions">

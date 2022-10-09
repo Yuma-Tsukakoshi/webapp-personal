@@ -23,7 +23,7 @@ let $decideloading;
 $('input[name="color"]').change(function(){
   let $TodoColor = $('input[name="color"]').val() 
   $('.input-values-wrappper').css("background-color",$TodoColor)
-})
+});
 $('input[name="Todo"]').change(function(){
   let $TodoTodo = $('input[name="Todo"]').val()
   $('#input-value-Todo').text($TodoTodo)
@@ -34,7 +34,8 @@ $('#category').change(function(){
 })
 $("#decide-button").click(function(){
   $decideloading = setTimeout(function(){
-    $('.modal').fadeOut(250)
+    $('.modal').fadeOut(250),
+    $('#Todo-textarea').append($('#js-input'))
   },1500)
 })
 

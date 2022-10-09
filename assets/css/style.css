@@ -394,29 +394,33 @@ input[type=checkbox]:checked + label::after {
   margin: 20px 10%;
 }
 .input-values{}
-.input-values-wrappper{}
 .input-values-wrappper{
+  position: relative;
   display: flex;
   background-color: #817b7b33;
-  opacity: .5;
-  z-index: -1;
-  width: 700px;
-  height: 65px;
-  border-radius: 0 18px 18px 0;
+  width: 80%;
+  height: 60px;
+  border-radius: 0 30px 30px 0;
   margin: 40px 0 0 100px;
+  align-items: center;
 }
 #input-value-date{}
 #input-value-Todo{
-  font-weight: bold;
-  font-size: 18px;
+  position: absolute;
   display: flex;
   display: wrap;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 80px;
 }
 #input-value-category{
-  font-size: 20px;
+  font-size: 16px;
   right: 2%;
-  font-weight: bold;
-  opacity: 0.5;
+  position: absolute;
+  background-color: #000;
+  border-radius: 16px;
+  padding: 8px;
+  color: #fff;
 }
 .button.decide{
   position: absolute;
@@ -425,6 +429,12 @@ input[type=checkbox]:checked + label::after {
   margin: 30px auto;
   bottom: 0;
   right: 33%;
+}
+.label.check-Todo{
+  background-color: transparent;
+}
+.label.check-Todo:checked{
+  background-color: transparent;
 }
 
 /* main */
