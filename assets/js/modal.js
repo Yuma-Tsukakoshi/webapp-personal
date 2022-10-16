@@ -12,12 +12,12 @@ $('#js-Todo-button').click(function(){
   $('.modal').fadeIn(350)
   $('.modal-top').hide()
   $('.modal-Todo').fadeIn(350)
-
 })
 $('#js-closeModal').click(function(){
   $('.modal').fadeOut(250)
   $('.modal-loading').hide()
   $('.modal-post').hide()
+  $('.modal-Todo').hide()
   $('.modal-top').show("slow")
   unChecked(checkbox);
   Textclear(InputTexts);
@@ -46,3 +46,5 @@ $('#js-buckModal').click(function(){
   $('#js-closeModal').fadeIn(350)
   $('#js-buckModal').fadeOut(250)
 })
+
+// $('#js-countdown').click(function(){})

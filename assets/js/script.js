@@ -19,7 +19,6 @@ $('.box.timer').click(function(){
   $('.stop-watch').fadeToggle("slow");
 })
 
-let $decideloading;
 $('input[name="color"]').change(function(){
   let $TodoColor = $('input[name="color"]').val() 
   $('.input-values-wrappper').css("background-color",$TodoColor)
@@ -32,12 +31,15 @@ $('#category').change(function(){
   let $TodoCategory = $('#category').val()
   $('#input-value-category').text($TodoCategory)
 })
+let $decideloading;
 $("#decide-button").click(function(){
   $decideloading = setTimeout(function(){
     $('.modal').fadeOut(250),
+    $('.modal-top').show()
     $('#Todo-textarea').append($('#js-input'))
   },1500)
 })
+
 
 //投稿後の初期化  //ツイート機能
 const checkbox = document.querySelectorAll(".checkbox");
